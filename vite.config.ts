@@ -15,7 +15,8 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://api.suppin.store/api/v1',
+        // target: 'http://api.suppin.store/api/v1',
+        target: 'https://coherent-midge-probably.ngrok-free.app/api/v1',
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, ''),
       },
